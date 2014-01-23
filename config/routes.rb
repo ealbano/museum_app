@@ -1,4 +1,5 @@
 MuseumApp::Application.routes.draw do
+  devise_for :users
   root 'paintings#index'
 
   resources :museums
