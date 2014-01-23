@@ -1,0 +1,10 @@
+<h1>Paintings</h1>
+
+<%= form_tag :paintings, method: :get do %>
+  <%= text_field_tag :query %>
+  <%= submit_tag 'Search' %>
+<% end %>
+
+<%= render @paintings %>
+
+<%= link_to "New Painting", new_painting_path %>

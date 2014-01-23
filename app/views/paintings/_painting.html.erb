@@ -1,0 +1,6 @@
+<div class="painting">
+  <h3><%= painting.name %></h3>
+  <%= image_tag painting.image %>
+  <p><%= painting.description %></p>
+  <%= link_to "Edit Painting", edit_painting_path(painting) %>
+</div>
